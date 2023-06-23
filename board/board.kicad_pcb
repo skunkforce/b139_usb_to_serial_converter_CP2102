@@ -1,4 +1,4 @@
-(kicad_pcb (version 20211014) (generator pcbnew)
+(kicad_pcb (version 20221018) (generator pcbnew)
 
   (general
     (thickness 1.6)
@@ -54,14 +54,15 @@
     (pad_to_mask_clearance 0)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
+      (plot_on_all_layers_selection 0x0000000_00000000)
       (disableapertmacros false)
       (usegerberextensions false)
       (usegerberattributes true)
       (usegerberadvancedattributes true)
       (creategerberjobfile true)
-      (svguseinch false)
+      (dashed_line_dash_ratio 12.000000)
+      (dashed_line_gap_ratio 3.000000)
       (svgprecision 6)
-      (excludeedgelayer true)
       (plotframeref false)
       (viasonmask false)
       (mode 1)
@@ -90,7 +91,7 @@
   (net 0 "")
 
   (footprint "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen" (layer "F.Cu")
-    (tedit 0) (tstamp 426f3737-3fea-4729-9954-5e08fb84ef28)
+    (tstamp 426f3737-3fea-4729-9954-5e08fb84ef28)
     (at 150 99)
     (descr "Open Source Hardware Symbol")
     (tags "Logo Symbol OSHW")
@@ -99,14 +100,15 @@
     (path "/b72b6f4a-7489-40f2-bb90-d75ae01aa368")
     (attr exclude_from_pos_files)
     (fp_text reference "LOGO1" (at 0 0) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+        (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7563e45e-614c-4d52-a3e8-1ddcbed1846d)
     )
     (fp_text value "Logo_Open_Hardware_Small" (at 0.75 0) (layer "F.Fab") hide
-      (effects (font (size 1 1) (thickness 0.15)))
+        (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f51061c7-4f8e-485f-b8b5-6978e8bea734)
     )
-    (fp_poly (pts
+    (fp_poly
+      (pts
         (xy 0.555814 -2.531069)
         (xy 0.639635 -2.086445)
         (xy 0.94892 -1.958947)
@@ -444,16 +446,26 @@
         (xy -0.453454 -2.975693)
         (xy 0.471994 -2.975693)
         (xy 0.555814 -2.531069)
-      ) (layer "F.SilkS") (width 0.01) (fill solid) (tstamp d212dae5-b2e6-4ec6-89cf-ab9b74e16175))
+      )
+
+      (stroke (width 0.01) (type solid)) (fill solid) (layer "F.SilkS") (tstamp d212dae5-b2e6-4ec6-89cf-ab9b74e16175))
   )
 
-  (gr_line (start 142 90) (end 159 90) (layer "Edge.Cuts") (width 0.05) (tstamp 27e41039-2f3e-4e07-a478-aa153958a745))
-  (gr_arc (start 161 101) (mid 160.414214 102.414214) (end 159 103) (layer "Edge.Cuts") (width 0.05) (tstamp 2dd21468-8ed9-43fe-9345-c14536f0cd44))
-  (gr_line (start 159 103) (end 142 103) (layer "Edge.Cuts") (width 0.05) (tstamp 566f44dc-1c80-4a61-a6e2-376182a88e59))
-  (gr_arc (start 159 90) (mid 160.414214 90.585786) (end 161 92) (layer "Edge.Cuts") (width 0.05) (tstamp 7098b3ba-bc9f-4139-bbfe-500d2de5af8d))
-  (gr_arc (start 142 103) (mid 140.585786 102.414214) (end 140 101) (layer "Edge.Cuts") (width 0.05) (tstamp b192bd3a-d48b-498a-bad3-8416a3dae09d))
-  (gr_line (start 161 101) (end 161 92) (layer "Edge.Cuts") (width 0.05) (tstamp b198917c-ff42-4f2d-bab3-ca77f65fc579))
-  (gr_line (start 140 101) (end 140 92) (layer "Edge.Cuts") (width 0.05) (tstamp b90a121d-c293-4b21-8ced-47a767bdf45c))
-  (gr_arc (start 140 92) (mid 140.585786 90.585786) (end 142 90) (layer "Edge.Cuts") (width 0.05) (tstamp c7b5edd8-a0af-4f1b-8316-344c733181d6))
+  (gr_line (start 142 90) (end 159 90)
+    (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") (tstamp 27e41039-2f3e-4e07-a478-aa153958a745))
+  (gr_arc (start 161 101) (mid 160.414214 102.414214) (end 159 103)
+    (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") (tstamp 2dd21468-8ed9-43fe-9345-c14536f0cd44))
+  (gr_line (start 159 103) (end 142 103)
+    (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") (tstamp 566f44dc-1c80-4a61-a6e2-376182a88e59))
+  (gr_arc (start 159 90) (mid 160.414214 90.585786) (end 161 92)
+    (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") (tstamp 7098b3ba-bc9f-4139-bbfe-500d2de5af8d))
+  (gr_arc (start 142 103) (mid 140.585786 102.414214) (end 140 101)
+    (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") (tstamp b192bd3a-d48b-498a-bad3-8416a3dae09d))
+  (gr_line (start 161 101) (end 161 92)
+    (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") (tstamp b198917c-ff42-4f2d-bab3-ca77f65fc579))
+  (gr_line (start 140 101) (end 140 92)
+    (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") (tstamp b90a121d-c293-4b21-8ced-47a767bdf45c))
+  (gr_arc (start 140 92) (mid 140.585786 90.585786) (end 142 90)
+    (stroke (width 0.05) (type solid)) (layer "Edge.Cuts") (tstamp c7b5edd8-a0af-4f1b-8316-344c733181d6))
 
 )
